@@ -26,6 +26,8 @@ def main():
                     main()
                 else:
                     print("ERR | Unknown command, see help for more info.")
+        elif o in ("exit"):
+            sys.exit(0)
         else: 
             print ("ERR | Unknown command, see help for more info.")
         

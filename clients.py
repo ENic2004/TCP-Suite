@@ -1,12 +1,15 @@
 import socket
 
 def tcpclient_setup(run):
-    ip = input("TCP-CLIENT | IP >>> ")
-    port = int(input("TCP-CLIENT | PORT >>> "))
-    ans = input("TCP-CLIENT | Answer to Server >>> ")
-    recv_first = bool(input("TCP-CLIENT | Receive first >>> "))
-    if run in True:
-        tcpclient(ip, port, ans, recv_first)
+    try:
+        ip = input("TCP-CLIENT | IP >>> ")
+        port = int(input("TCP-CLIENT | PORT >>> "))
+        ans = input("TCP-CLIENT | Answer to Server >>> ")
+        recv_first = eval(input("TCP-CLIENT | Receive first >>> "))
+        if run in True:
+            tcpclient(ip, port, ans, recv_first)
+    except TypeError:
+        print("ERR | TypeError, see help for more info.")
 
 def tcpclient(ip, port, ans, recv_first):
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

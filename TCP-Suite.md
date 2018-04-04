@@ -17,3 +17,4 @@ Testing and improving :active, tc2, after tc1, 30m
 
 - Help-File für Menü TCP schreiben
 - Server schreiben
+- boolean input in client/tcp_client (receive first)
