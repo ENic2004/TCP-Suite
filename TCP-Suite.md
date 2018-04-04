@@ -15,4 +15,5 @@ Testing and improving :active, tc2, after tc1, 30m
 
 ## To-Do's
 
-- Help-File schreiben
+- Help-File für Menü TCP schreiben
+- Server schreiben
