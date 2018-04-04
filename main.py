@@ -11,5 +11,5 @@ def main():
     while True:
         o = input(">>> ")
         if o in ("tcp-client"):
-            tcpclient.tcp_client_setup(False)
+            tcpclient.tcp_client(False)
 main()
