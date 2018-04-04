@@ -10,8 +10,6 @@ global server
 def main():
     while True:
         o = input(">>> ")
-        if o in ("tcp-client-setup"):
+        if o in ("tcp-client"):
             tcpclient.tcp_client_setup(False)
-        if o in ("tcp-client-start"):
-            tcpclient.tcp_client_setup(True)
 main()
